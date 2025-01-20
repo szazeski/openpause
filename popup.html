@@ -1,0 +1,49 @@
+<html>
+  <body>
+
+    <p id="domain">sitename</p>
+    <p>today: <strong>23 minutes</strong>  total: 3h over 30d</p>
+
+
+    <select name="siteCategory" id="siteCategory">
+      <option>None (do not limit)</option>
+      <option>Red</option>
+      <option>Green</option>
+      <option>Blue</option>
+      <option>Yellow</option>
+    </select>
+
+    <label>
+    <input type="checkbox" name="ignore" id="ignore" value="true" />Ignore this site</label>
+
+    <br/>
+
+    <label>How long should I be able to spend on this site?
+    <input type="number" name="timeLimit" id="timeLimit" min="0" max="1440" step="1" value="0" />
+    </label>
+
+    <br/>
+
+    <label>What time should this reset? 
+    <select name="resetTime" id="resetTime">
+      <option>12AM</option><option>1AM</option><option>2AM</option><option>3AM</option><option>4AM</option><option>5AM</option><option>6AM</option><option>7AM<option><option>8AM</option><option>9AM</option><option>10AM</option><option>11AM</option><option>12PM</option><option>1PM</option><option>2PM</option><option>3PM</option><option>4PM</option><option>5PM</option><option>6PM</option><option>7PM<option><option>8PM</option><option>9PM</option><option>10PM</option><option>11PM</option><option>12PM</option>
+    </select>
+    </label>
+
+    <br/>
+
+    <label>Fade Amount :
+      <select name="fadeAmount" id="fadeAmount">
+        <option>50%</option><option>75%</option><option>80%</option><option>90%</option><option>100%</option>
+      </select>
+    </label>
+    
+  </body>
+<style>
+body {
+   border:dashed 1px red;
+   min-width: 400px;
+}
+</style>
+<script src="./popup.js" type="module"></script>
+</html>
